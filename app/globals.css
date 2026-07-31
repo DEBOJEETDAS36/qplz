@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +23,49 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+@import "tailwindcss";
+
+@theme {
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #05070a;
+  --color-text-light: #0a0a0a;
+  --color-text-dark: #e6f1ff;
+  --color-glow-blue: #3ba7ff;
+  --color-glow-blue-soft: #1e5f99;
+  --color-accent: #00c2ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+/* Reusable glow effect for cards/buttons in dark mode */
+.glow-border {
+  border: 1px solid rgba(59, 167, 255, 0.25);
+  box-shadow: 0 0 0px rgba(59, 167, 255, 0);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.dark .glow-border:hover {
+  border-color: rgba(59, 167, 255, 0.6);
+  box-shadow: 0 0 20px rgba(59, 167, 255, 0.35), 0 0 40px rgba(59, 167, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.glow-border:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }

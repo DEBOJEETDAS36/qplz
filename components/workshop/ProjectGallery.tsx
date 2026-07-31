@@ -14,7 +14,7 @@ export default function ProjectGallery() {
   return (
     <section
       id="projects"
-      className="px-5 py-16 md:py-24 bg-black/[0.02] dark:bg-white/[0.02]"
+      className="px-5 py-16 md:py-24 bg-black/2 dark:bg-white/2"
     >
       <AnimatedSection className="max-w-6xl mx-auto text-center mb-14">
         <h2 className="text-2xl md:text-4xl font-semibold tracking-tight">
@@ -29,7 +29,7 @@ export default function ProjectGallery() {
         {projects.map((item, i) => (
           <AnimatedSection key={item.title} delay={i * 0.08}>
             <div
-              className="group relative rounded-2xl overflow-hidden aspect-[4/3]
+              className="group relative rounded-2xl overflow-hidden aspect-4/3
                          border border-black/10 dark:border-white/10
                          hover:border-glow-blue/50 transition-all duration-300
                          dark:hover:shadow-[0_0_25px_rgba(59,167,255,0.15)]"
@@ -40,7 +40,7 @@ export default function ProjectGallery() {
 
               <div
                 className="absolute inset-0 flex flex-col justify-end p-4
-                           bg-gradient-to-t from-black/80 via-black/10 to-transparent
+                           bg-linear-to-t from-black/80 via-black/10 to-transparent
                            opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <p className="text-xs text-glow-blue font-medium mb-1">

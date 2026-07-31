@@ -15,7 +15,7 @@ export default function CallToAction() {
           <div
             aria-hidden
             className="pointer-events-none absolute -bottom-24 left-1/2 -translate-x-1/2
-                       w-[500px] h-[300px] rounded-full
+                       w-125 h-75 rounded-full
                        dark:bg-glow-blue/20 blur-3xl opacity-0 dark:opacity-100
                        transition-opacity duration-700"
           />

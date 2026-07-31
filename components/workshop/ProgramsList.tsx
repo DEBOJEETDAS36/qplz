@@ -52,7 +52,7 @@ export default function ProgramsList() {
               <div
                 className="group h-full p-7 rounded-2xl
                            border border-black/10 dark:border-white/10
-                           bg-white dark:bg-white/[0.02]
+                           bg-white dark:bg-white/2
                            hover:border-glow-blue/50 transition-all duration-300
                            dark:hover:shadow-[0_0_25px_rgba(59,167,255,0.15)]
                            hover:-translate-y-1"

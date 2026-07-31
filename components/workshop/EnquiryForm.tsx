@@ -83,14 +83,14 @@ export default function EnquiryForm() {
             onSubmit={handleSubmit(onSubmit)}
             className="space-y-4 p-7 md:p-8 rounded-2xl
                        border border-black/10 dark:border-white/10
-                       bg-white dark:bg-white/[0.02]"
+                       bg-white dark:bg-white/2"
           >
             <div>
               <input
                 {...register("name")}
                 placeholder="Full name"
                 className="w-full px-4 py-3 rounded-xl text-sm
-                           bg-black/[0.03] dark:bg-white/[0.03]
+                           bg-black/3 dark:bg-white/3
                            border border-black/10 dark:border-white/10
                            focus:outline-none focus:border-glow-blue/60
                            dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]
@@ -106,7 +106,7 @@ export default function EnquiryForm() {
                 {...register("email")}
                 placeholder="Email address"
                 className="w-full px-4 py-3 rounded-xl text-sm
-                           bg-black/[0.03] dark:bg-white/[0.03]
+                           bg-black/3 dark:bg-white/3
                            border border-black/10 dark:border-white/10
                            focus:outline-none focus:border-glow-blue/60
                            dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]
@@ -122,7 +122,7 @@ export default function EnquiryForm() {
                 {...register("phone")}
                 placeholder="Phone number"
                 className="w-full px-4 py-3 rounded-xl text-sm
-                           bg-black/[0.03] dark:bg-white/[0.03]
+                           bg-black/3 dark:bg-white/3
                            border border-black/10 dark:border-white/10
                            focus:outline-none focus:border-glow-blue/60
                            dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]
@@ -138,7 +138,7 @@ export default function EnquiryForm() {
                 {...register("program")}
                 defaultValue=""
                 className="w-full px-4 py-3 rounded-xl text-sm
-                           bg-black/[0.03] dark:bg-white/[0.03]
+                           bg-black/3 dark:bg-white/3
                            border border-black/10 dark:border-white/10
                            focus:outline-none focus:border-glow-blue/60
                            dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]
@@ -171,7 +171,7 @@ export default function EnquiryForm() {
                 placeholder="Anything you'd like us to know? (optional)"
                 rows={3}
                 className="w-full px-4 py-3 rounded-xl text-sm resize-none
-                           bg-black/[0.03] dark:bg-white/[0.03]
+                           bg-black/3 dark:bg-white/3
                            border border-black/10 dark:border-white/10
                            focus:outline-none focus:border-glow-blue/60
                            dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]

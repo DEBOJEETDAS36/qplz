@@ -9,7 +9,7 @@ export default function WorkshopHero() {
       <div
         aria-hidden
         className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2
-                   w-[600px] h-[600px] rounded-full
+                   w-150 h-150 rounded-full
                    dark:bg-glow-blue/10 blur-3xl opacity-0 dark:opacity-100
                    transition-opacity duration-700"
       />

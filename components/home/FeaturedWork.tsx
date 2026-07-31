@@ -43,7 +43,7 @@ export default function FeaturedWork() {
         {projects.map((item, i) => (
           <AnimatedSection key={item.title} delay={i * 0.1}>
             <div
-              className="group relative rounded-2xl overflow-hidden aspect-[4/5]
+              className="group relative rounded-2xl overflow-hidden aspect-4/5
                          border border-black/10 dark:border-white/10
                          hover:border-glow-blue/50 transition-all duration-300
                          dark:hover:shadow-[0_0_25px_rgba(59,167,255,0.15)]"
@@ -55,7 +55,7 @@ export default function FeaturedWork() {
 
               <div
                 className="absolute inset-0 flex flex-col justify-end p-4
-                           bg-gradient-to-t from-black/80 via-black/10 to-transparent
+                           bg-linear-to-t from-black/80 via-black/10 to-transparent
                            opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <p className="text-xs text-glow-blue font-medium mb-1">

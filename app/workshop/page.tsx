@@ -1,7 +1,7 @@
 import WorkshopHero from "@/components/workshop/WorkshopHero";
 import ProgramsList from "@/components/workshop/ProgramsList";
 import ProjectGallery from "@/components/workshop/ProjectGallery";
-import EnquiryForm from "@/components/workshop/EnquiryForm";
+import ContactForm from "@/components/shared/ContactForm";
 
 export default function WorkshopPage() {
   return (
@@ -9,7 +9,7 @@ export default function WorkshopPage() {
       <WorkshopHero />
       <ProgramsList />
       <ProjectGallery />
-      <EnquiryForm />
+      <ContactForm variant="workshop" />
     </>
   );
 }

@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import { useCart } from "@/context/CartContext";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -15,6 +16,7 @@ const navLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const { totalItems } = useCart();
 
   return (
     <header
@@ -51,12 +53,40 @@ export default function Navbar() {
           })}
         </ul>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-3">
+          <Link
+            href="/cart"
+            className="relative w-9 h-9 flex items-center justify-center rounded-full
+                       border border-black/10 dark:border-white/10
+                       hover:border-glow-blue/50 transition-colors duration-300
+                       dark:hover:shadow-[0_0_15px_rgba(59,167,255,0.4)]"
+            aria-label="Cart"
+          >
+            <ShoppingCart size={16} />
+            {totalItems > 0 && (
+              <span className="absolute -top-1.5 -right-1.5 w-4.5 h-4.5 min-w-[18px] px-1 rounded-full bg-glow-blue text-black text-[10px] font-semibold flex items-center justify-center">
+                {totalItems}
+              </span>
+            )}
+          </Link>
           <ThemeToggle />
         </div>
 
         {/* Mobile controls */}
         <div className="flex items-center gap-3 md:hidden">
+          <Link
+            href="/cart"
+            className="relative w-9 h-9 flex items-center justify-center rounded-full
+                       border border-black/10 dark:border-white/10"
+            aria-label="Cart"
+          >
+            <ShoppingCart size={16} />
+            {totalItems > 0 && (
+              <span className="absolute -top-1.5 -right-1.5 w-4.5 h-4.5 min-w-[18px] px-1 rounded-full bg-glow-blue text-black text-[10px] font-semibold flex items-center justify-center">
+                {totalItems}
+              </span>
+            )}
+          </Link>
           <ThemeToggle />
           <button
             onClick={() => setOpen(!open)}

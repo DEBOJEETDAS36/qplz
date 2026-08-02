@@ -3,14 +3,24 @@
 import { useState } from "react";
 import { ShoppingCart, Minus, Plus, Check } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { useCart } from "@/context/CartContext";
 import { Product } from "@/types";
 
 export default function ProductDetail({ product }: { product: Product }) {
   const [qty, setQty] = useState(1);
   const [added, setAdded] = useState(false);
+  const { addItem } = useCart();
 
   const handleAddToCart = () => {
-    // Cart logic will be wired up later (context/state management)
+    addItem(
+      {
+        productId: product._id,
+        slug: product.slug,
+        name: product.name,
+        price: product.price,
+      },
+      qty
+    );
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
   };

@@ -34,6 +34,7 @@
 
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
@@ -50,9 +51,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased min-h-screen flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <CartProvider>
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </CartProvider>
         </ThemeProvider>
       </body>
     </html>

@@ -101,14 +101,15 @@ export default function CartPage() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3">
-          <button
-            className="flex-1 px-6 py-3 rounded-full text-sm font-medium
-                       bg-black text-white dark:bg-glow-blue dark:text-black
-                       hover:opacity-90 transition-all duration-300
-                       dark:hover:shadow-[0_0_25px_rgba(59,167,255,0.4)]"
+          <Link
+            href="/checkout"
+            className="flex-1 text-center px-6 py-3 rounded-full text-sm font-medium
+                      bg-black text-white dark:bg-glow-blue dark:text-black
+                      hover:opacity-90 transition-all duration-300
+                      dark:hover:shadow-[0_0_25px_rgba(59,167,255,0.4)]"
           >
             Proceed to Checkout
-          </button>
+          </Link>
           <button
             onClick={clearCart}
             className="px-6 py-3 rounded-full text-sm font-medium

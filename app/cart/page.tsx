@@ -41,7 +41,7 @@ export default function CartPage() {
               <div
                 className="flex items-center gap-4 p-4 rounded-2xl
                            border border-black/10 dark:border-white/10
-                           bg-white dark:bg-white/[0.02]"
+                           bg-white dark:bg-white/2"
               >
                 <div className="w-16 h-16 rounded-xl bg-black/5 dark:bg-white/5 flex items-center justify-center shrink-0">
                   <span className="text-[10px] opacity-40">Image</span>
@@ -92,7 +92,7 @@ export default function CartPage() {
         <div
           className="flex items-center justify-between p-6 rounded-2xl
                      border border-black/10 dark:border-white/10
-                     bg-white dark:bg-white/[0.02] mb-6"
+                     bg-white dark:bg-white/2 mb-6"
         >
           <span className="text-sm font-medium opacity-70">Total</span>
           <span className="text-xl font-semibold text-glow-blue">

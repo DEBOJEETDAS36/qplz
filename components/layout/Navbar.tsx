@@ -64,7 +64,7 @@ export default function Navbar() {
           >
             <ShoppingCart size={16} />
             {totalItems > 0 && (
-              <span className="absolute -top-1.5 -right-1.5 w-4.5 h-4.5 min-w-[18px] px-1 rounded-full bg-glow-blue text-black text-[10px] font-semibold flex items-center justify-center">
+              <span className="absolute -top-1.5 -right-1.5 w-4.5 h-4.5 min-w-4.5 px-1 rounded-full bg-glow-blue text-black text-[10px] font-semibold flex items-center justify-center">
                 {totalItems}
               </span>
             )}
@@ -82,7 +82,7 @@ export default function Navbar() {
           >
             <ShoppingCart size={16} />
             {totalItems > 0 && (
-              <span className="absolute -top-1.5 -right-1.5 w-4.5 h-4.5 min-w-[18px] px-1 rounded-full bg-glow-blue text-black text-[10px] font-semibold flex items-center justify-center">
+              <span className="absolute -top-1.5 -right-1.5 w-4.5 h-4.5 min-w-4.5 px-1 rounded-full bg-glow-blue text-black text-[10px] font-semibold flex items-center justify-center">
                 {totalItems}
               </span>
             )}

@@ -59,7 +59,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <MapPin size={14} className="text-glow-blue" />
-              Your City, India
+              Pioneer Park, Barasat, Kol - 700124
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@ export default function Footer() {
 
       <div className="border-t border-black/5 dark:border-white/5 py-5">
         <p className="text-center text-xs opacity-60">
-          © {new Date().getFullYear()} YourCenter. All rights reserved.
+          © {new Date().getFullYear()} Quantum Physics Lab. All rights reserved.
         </p>
       </div>
     </footer>

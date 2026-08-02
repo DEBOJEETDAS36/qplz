@@ -66,7 +66,7 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
     <section
       id="contact"
       className={`px-5 py-16 md:py-24 ${
-        isWorkshop ? "" : "bg-black/[0.02] dark:bg-white/[0.02]"
+        isWorkshop ? "" : "bg-black/2 dark:bg-white/2"
       }`}
     >
       <AnimatedSection className="max-w-6xl mx-auto text-center mb-14">
@@ -148,14 +148,14 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
               onSubmit={handleSubmit(onSubmit)}
               className="space-y-4 p-7 rounded-2xl
                          border border-black/10 dark:border-white/10
-                         bg-white dark:bg-white/[0.02]"
+                         bg-white dark:bg-white/2"
             >
               <div>
                 <input
                   {...register("name")}
                   placeholder="Your name"
                   className="w-full px-4 py-3 rounded-xl text-sm
-                             bg-black/[0.03] dark:bg-white/[0.03]
+                             bg-black/3 dark:bg-white/3
                              border border-black/10 dark:border-white/10
                              focus:outline-none focus:border-glow-blue/60
                              dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]
@@ -171,7 +171,7 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
                   {...register("email")}
                   placeholder="Email address"
                   className="w-full px-4 py-3 rounded-xl text-sm
-                             bg-black/[0.03] dark:bg-white/[0.03]
+                             bg-black/3 dark:bg-white/3
                              border border-black/10 dark:border-white/10
                              focus:outline-none focus:border-glow-blue/60
                              dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]
@@ -189,7 +189,7 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
                       {...register("phone")}
                       placeholder="Phone number"
                       className="w-full px-4 py-3 rounded-xl text-sm
-                                 bg-black/[0.03] dark:bg-white/[0.03]
+                                 bg-black/3 dark:bg-white/3
                                  border border-black/10 dark:border-white/10
                                  focus:outline-none focus:border-glow-blue/60
                                  dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]
@@ -205,7 +205,7 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
                       {...register("program")}
                       defaultValue=""
                       className="w-full px-4 py-3 rounded-xl text-sm
-                                 bg-black/[0.03] dark:bg-white/[0.03]
+                                 bg-black/3 dark:bg-white/3
                                  border border-black/10 dark:border-white/10
                                  focus:outline-none focus:border-glow-blue/60
                                  dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]
@@ -232,7 +232,7 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
                   placeholder={isWorkshop ? "Anything you'd like us to know? (optional context helps)" : "Your message"}
                   rows={isWorkshop ? 3 : 4}
                   className="w-full px-4 py-3 rounded-xl text-sm resize-none
-                             bg-black/[0.03] dark:bg-white/[0.03]
+                             bg-black/3 dark:bg-white/3
                              border border-black/10 dark:border-white/10
                              focus:outline-none focus:border-glow-blue/60
                              dark:focus:shadow-[0_0_15px_rgba(59,167,255,0.2)]

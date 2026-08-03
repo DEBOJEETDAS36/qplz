@@ -98,7 +98,7 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
               </div>
               <div>
                 <p className="text-sm font-medium">Phone</p>
-                <p className="text-sm opacity-70">+91-XXXXXXXXXX</p>
+                <p className="text-sm opacity-70">+91-89102 42462</p>
               </div>
             </div>
 
@@ -118,7 +118,7 @@ export default function ContactForm({ variant = "general" }: ContactFormProps) {
               </div>
               <div>
                 <p className="text-sm font-medium">Location</p>
-                <p className="text-sm opacity-70">Your City, India</p>
+                <p className="text-sm opacity-70">Kolkata, India</p>
               </div>
             </div>
           </AnimatedSection>

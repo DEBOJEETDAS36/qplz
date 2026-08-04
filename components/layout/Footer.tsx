@@ -47,13 +47,13 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2 text-sm opacity-80">
             <li className="flex items-center gap-2">
-              <Phone size={14} className="text-glow-blue" /> +91-XXXXXXXXXX
+              <Phone size={14} className="text-glow-blue" /> +91-89102 42462
             </li>
             <li className="flex items-center gap-2">
-              <Mail size={14} className="text-glow-blue" /> yourcenter@email.com
+              <Mail size={14} className="text-glow-blue" /> quantumania.sd@email.com
             </li>
             <li className="flex items-center gap-2">
-              <MapPin size={14} className="text-glow-blue" /> Your City, India
+              <MapPin size={14} className="text-glow-blue" /> Barasat, Kolkata, India
             </li>
           </ul>
         </div>
@@ -66,7 +66,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             {/* Email Icon Link */}
             <a 
-              href="mailto:yourcenter@email.com" 
+              href="mailto:quantumania.sd@email.com" 
               aria-label="Email" 
               className="w-9 h-9 flex items-center justify-center rounded-full border border-black/10 dark:border-white/10 hover:border-glow-blue/50 hover:text-glow-blue hover:-translate-y-0.5 transition-all duration-300 dark:hover:shadow-[0_0_15px_rgba(59,167,255,0.35)]"
             >

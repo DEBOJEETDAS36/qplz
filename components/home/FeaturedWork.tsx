@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Smart Irrigation System",
     tag: "IoT · Workshop Project",
-    image: "/images/workshop/project-1.jpg",
+    image: "/public/images/workshop/project-1.jpg",
   },
   {
     title: "Home Automation Hub",

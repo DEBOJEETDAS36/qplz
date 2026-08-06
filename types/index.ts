@@ -8,3 +8,10 @@ export interface Product {
   description?: string;
   stock?: number;
 }
+
+export interface GalleryImage {
+  id: string;
+  src: string;
+  alt: string;
+  category: "project" | "product" | "student";
+}

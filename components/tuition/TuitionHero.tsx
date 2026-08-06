@@ -10,7 +10,7 @@ export default function TuitionHero() {
       <div
         aria-hidden
         className="pointer-events-none absolute -top-20 md:-top-40 left-1/2 -translate-x-1/2
-                   w-[320px] h-[320px] md:w-[600px] md:h-[600px] rounded-full
+                   w-[320px] h-80 md:w-150 md:h-150 rounded-full
                    dark:bg-glow-blue/10 blur-2xl md:blur-3xl opacity-0 dark:opacity-100
                    transition-opacity duration-700"
       />

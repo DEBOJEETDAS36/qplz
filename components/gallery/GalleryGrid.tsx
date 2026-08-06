@@ -73,7 +73,7 @@ export default function GalleryGrid() {
                 exit={{ opacity: 0, scale: 0.92 }}
                 transition={{ duration: 0.3 }}
                 onClick={() => setSelected(img)}
-                className="group relative rounded-2xl overflow-hidden aspect-[4/3] text-left
+                className="group relative rounded-2xl overflow-hidden aspect-4/3 text-left
                            border border-black/10 dark:border-white/10
                            hover:border-glow-blue/50 transition-all duration-300
                            dark:hover:shadow-[0_0_25px_rgba(59,167,255,0.15)]"
@@ -87,7 +87,7 @@ export default function GalleryGrid() {
                 />
                 <div
                   className="absolute inset-0 flex flex-col justify-end p-4
-                             bg-gradient-to-t from-black/80 via-black/10 to-transparent
+                             bg-linear-to-t from-black/80 via-black/10 to-transparent
                              opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 >
                   <p className="text-[10px] uppercase tracking-wide text-glow-blue font-medium mb-1">
@@ -115,7 +115,7 @@ export default function GalleryGrid() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelected(null)}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-5 bg-black/80 backdrop-blur-sm"
+            className="fixed inset-0 z-100 flex items-center justify-center p-5 bg-black/80 backdrop-blur-sm"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.92 }}
@@ -134,7 +134,7 @@ export default function GalleryGrid() {
               >
                 <X size={18} />
               </button>
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-4/3 w-full">
                 <Image
                   src={selected.src}
                   alt={selected.alt}
